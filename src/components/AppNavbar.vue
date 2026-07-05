@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1>PugReads</h1>
+    <h1>PixelInk</h1>
   </nav>
 </template>
 
