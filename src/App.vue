@@ -5,8 +5,14 @@ import HeroBanner from './components/HeroBanner.vue'
 import AppNavbar from './components/AppNavbar.vue'
 import ArticleCard from './components/ArticleCard.vue'
 import articles from './data/articles'
+import FeaturedArticle from './components/FeaturedArticle.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
 const search = ref('')
+
+const featuredArticle = computed(() => {
+  return articles[0]
+})
 
 const filteredArticles = computed(() => {
   return articles.filter(article =>
@@ -21,6 +27,15 @@ const filteredArticles = computed(() => {
 <template>
   <AppNavbar />
   <HeroBanner />
+
+  <FeaturedArticle
+    :category="articles.category"
+    :title="articles.title"
+    :description="articles.description"
+    :author="featuredArticle.readingTime"
+    :readingTime="articles.readingTime"
+    :image="featuredArticle.image"
+  />
 
   <div class="search">
     <input
@@ -41,6 +56,7 @@ const filteredArticles = computed(() => {
   />
 </section>
 
+<SiteFooter />
 </template>
 
 <style scoped>

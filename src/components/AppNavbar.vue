@@ -4,12 +4,10 @@
   </nav>
 </template>
 
-//the logic
 <script setup>
 //JS code
 </script>
 
-//style
 <style scoped>
 nav {
   background: #1f2937;
