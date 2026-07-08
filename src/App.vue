@@ -15,48 +15,41 @@ const featuredArticle = computed(() => {
 })
 
 const filteredArticles = computed(() => {
-  return articles.filter(article =>
-    article.title
-      .toLowerCase()
-      .includes(search.value.toLowerCase())
-      )
+  return articles.filter((article) =>
+    article.title.toLowerCase().includes(search.value.toLowerCase()),
+  )
 })
 </script>
-
 
 <template>
   <AppNavbar />
   <HeroBanner />
 
   <FeaturedArticle
-    :category="articles.category"
-    :title="articles.title"
-    :description="articles.description"
-    :author="featuredArticle.readingTime"
-    :readingTime="articles.readingTime"
+    :category="featuredArticle.category"
+    :title="featuredArticle.title"
+    :description="featuredArticle.description"
+    :author="featuredArticle.author"
+    :readingTime="featuredArticle.readingTime"
     :image="featuredArticle.image"
   />
 
   <div class="search">
-    <input
-      type="text"
-      placeholder="Search articles..."
-      v-model="search"
-    />
+    <input type="text" placeholder="Search articles..." v-model="search" />
   </div>
 
   <section class="articles">
-  <ArticleCard
-    v-for="article in filteredArticles"
-    :key="article.id"
-    :category="article.category"
-    :title="article.title"
-    :description="article.description"
-    :readingTime="article.readingTime"
-  />
-</section>
+    <ArticleCard
+      v-for="article in filteredArticles"
+      :key="article.id"
+      :category="article.category"
+      :title="article.title"
+      :description="article.description"
+      :readingTime="article.readingTime"
+    />
+  </section>
 
-<SiteFooter />
+  <SiteFooter />
 </template>
 
 <style scoped>
