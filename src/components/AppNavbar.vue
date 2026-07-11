@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-//JS code
 </script>
 
 <style scoped>
