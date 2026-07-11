@@ -7,17 +7,19 @@
 <script setup>
 </script>
 
-<style scoped lang="scss>
+<style scoped lang="scss">
 @use "../styles/variables" as *;
 
 nav {
-  background: $navbar-bg;
+  background: $background;
   color: $primary-light;
+  border-bottom: 1px solid $border;
   padding: 1rem;
 }
 
 h1 {
   margin: 0;
+  color: $text-dark;
 }
 </style>
 

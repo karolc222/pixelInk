@@ -52,9 +52,11 @@ const filteredArticles = computed(() => {
   <SiteFooter />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "./styles/variables" as *;
+
 .articles {
-  max-width: 75rem;
+  max-width: $content-width;
   margin: 4rem auto;
   padding: 0 2rem;
 
@@ -64,7 +66,7 @@ const filteredArticles = computed(() => {
 }
 
 .search {
-  max-width: 75rem;
+  max-width: $content-width;
   margin: 2rem auto;
   padding: 0 2rem;
 }
@@ -72,13 +74,20 @@ const filteredArticles = computed(() => {
 .search input {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #f3c4db;
-  border-radius: 0.75rem;
+  border: 1px solid $border;
+  border-radius: $border-radius;
   font-size: 1rem;
   outline: none;
+  background: $background;
+  color: $text-dark;
 }
 
-.search input:focus {
-  border-color: #ec4899;
+.search input::placeholder {
+  color: $text-muted;
 }
+
+.search input:focus { 
+  border-color: $primary;
+}
+
 </style>
