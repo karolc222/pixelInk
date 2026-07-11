@@ -68,7 +68,8 @@ defineProps({
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/variables/" as *;
 
 .featured {
     display: flex;
@@ -81,7 +82,7 @@ defineProps({
 
     gap: 4rem;
 
-    background: white;
+    background: $background;
     border-radius: 1.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,.06);
 }
@@ -93,7 +94,7 @@ defineProps({
 .image {
     width: 24rem;
     height: 18rem;
-    background: #fde7f2;
+    background: $primary-light;
     border-radius: 1rem;
 }
 
@@ -109,11 +110,11 @@ h2 {
     font-size: 3rem;
     line-height: 1.1;
     margin: 1rem 0;
-    color: #111827;
+    color: $text-dark;
 }
 
 .description {
-    color: #6b7280;
+    color: $text-light;
     line-height: 1.8;
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -124,13 +125,13 @@ button{
     padding: 1rem 2rem;
     border: none;
     border-radius: .7rem;
-    background: #ec4899;
+    background: $primary;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background: #db2777;
+    background: $primary-dark;
 }
 
 </style>

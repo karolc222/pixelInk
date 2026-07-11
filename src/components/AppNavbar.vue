@@ -7,10 +7,12 @@
 <script setup>
 </script>
 
-<style scoped>
+<style scoped lang="scss>
+@use "../styles/variables" as *;
+
 nav {
-  background: #1f2937;
-  color: pink;
+  background: $navbar-bg;
+  color: $primary-light;
   padding: 1rem;
 }
 

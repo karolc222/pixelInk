@@ -1,18 +1,28 @@
-// Colours
-$primary: #ec4899;
-$primary-dark: #db2777;
-$primary-light: #fde7f2;
+// Brand colours
 
+//accent 
+$primary: #c63d72;
+$primary-dark: #a92f60;
+//light accent 
+$primary-light: #fdf2f8;
+
+//Text
+//main text
 $text-dark: #111827;
+//secondary text
 $text-light: #6b7280;
+$text-muted: #9ca3af;
 
+//Backgrounds
 $background: #ffffff;
+$background-soft: #fafafa;
 
 // Borders
+$border: #ececec;
+
+// Layout
+$content-width: 75rem;
 $border-radius: 1rem;
 
 // Shadows
 $card-shadow: 0 10px 30px rgba(0,0,0,.06);
-
-// Widths
-$content-width: 75rem;
