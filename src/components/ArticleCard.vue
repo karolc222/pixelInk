@@ -33,21 +33,25 @@ defineProps({
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/variables" as *;
+
 .card {
-    background: white;
+    background: $background;
     padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
     transition: transform .25s ease;
+    border: 1px solid $border; 
 }
 
-.card:hover {
+&:hover {
     transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,.8 );
 }
 
 .category {
-    color: #ec4899;
+    color: $primary-dark;
     font-size: .85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -56,21 +60,18 @@ defineProps({
 
 h2 {
     margin: 1rem 0;
-    color: #111827;
+    color: $text-dark;
 }
 
 p {
-    color: #6b7280;
-    line-height: 1.5;
+    color: $text-light;
+    line-height: 1.5rem;
 }
 
 span {
     display: inline-block;
     margin-top: 1.5rem;
-    color: #9ca3af;
-
-
+    color: $text-muted;
 }
-
 
 </style>
