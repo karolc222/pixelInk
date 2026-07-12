@@ -69,22 +69,22 @@ defineProps({
 
 
 <style scoped lang="scss">
-@use "../styles/variables/" as *;
+@use "../styles/variables" as *;
 
 .featured {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    max-width: 75rem;
+    max-width: $content-width;
     margin: 5rem auto;
     padding: 3rem;
 
     gap: 4rem;
 
     background: $background;
-    border-radius: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    border-radius: $border-radius;
+    box-shadow: $card-shadow;
 }
 
 .content {
@@ -95,11 +95,11 @@ defineProps({
     width: 24rem;
     height: 18rem;
     background: $primary-light;
-    border-radius: 1rem;
+    border-radius: $border-radius;
 }
 
 .category {
-    color: #ec4899;
+    color: $primary-dark;
     text-transform: uppercase;
     letter-spacing: .12rem;
     font-size: .9rem;
@@ -124,13 +124,14 @@ button{
     margin-top: 2rem;
     padding: 1rem 2rem;
     border: none;
-    border-radius: .7rem;
+    border-radius: $border-radius;
     background: $primary;
     color: white;
     cursor: pointer;
+    transition: backgrounf .2s ease;
 }
 
-button:hover {
+&:hover {
     background: $primary-dark;
 }
 

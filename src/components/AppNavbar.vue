@@ -4,11 +4,10 @@
   </nav>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
-@use "../styles/variables" as *;
+@use '../styles/variables' as *;
 
 nav {
   background: $background;
@@ -22,4 +21,3 @@ h1 {
   color: $text-dark;
 }
 </style>
-

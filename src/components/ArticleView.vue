@@ -1,3 +1,12 @@
+<script setup>
+defineProps({
+  article: {
+    type: Object,
+    required: true
+  }
+})
+</script>
+
 <template>
   <main class="article">
     <p>{{ article.category }}</p>
