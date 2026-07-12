@@ -1,12 +1,15 @@
 <template>
   <section class="hero">
-    <div class="hero">
-      <p class="hero-content"></p>
+    <div class="hero-content">
 
-      <h1>Digital publishing</h1>
+      <p class="tag">Digital publishing</p>
+
+      <h1>
+        Stories designed for the curious minds. 
+      </h1>
 
       <p class="subtitle">
-        The newest articles about technology, UX, software engineering and publishing.
+        Exploring technology, software engineering, UX and digital publishing." 
       </p>
 
       <button>Read latest stories</button>
@@ -16,19 +19,22 @@
 
 <script setup></script>
 
-<style scoped>
+
+<style scoped lang="scss">
+@use "../styles/variables" as *;
+
 .hero {
-  background: #fff;
+  background: $background;
   padding: 8rem 2rem;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: $content-width;
   margin: 0 auto;
 }
 
 .tag {
-  color: #ec4899;
+  color: $primary-dark;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -38,7 +44,7 @@
 h1 {
   font-size: 4rem;
   line-height: 1.1;
-  color: #111827;
+  color: $text-dark;
   margin: 1.5rem 0;
   font-weight: 700;
 }
@@ -46,7 +52,7 @@ h1 {
 .subtitle {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #6b7280;
+  color: $text-light;
   max-width: 550px;
 }
 
@@ -55,7 +61,7 @@ button {
   padding: 1rem 2rem;
   border: none;
   border-radius: 0.5rem;
-  background: #ec4899;
+  background: $primary;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -63,7 +69,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
-  background: #db2777;
+&:hover {
+  background: $primary-dark;
 }
 </style>
