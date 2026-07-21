@@ -1,3 +1,4 @@
+//array of objects 
 const articles = [
     {
       id: 1,
@@ -5,7 +6,7 @@ const articles = [
       title: "How AI Is Changing Digital Media",
       description: "Explore how AI is transforming publishing, content creation and personalised reading experiences.",
       content: "Artificial intelligence is changing the way readers consume digital media.",
-      readingTime: "6 min read"
+      wordCount: 1150
     },
     {
       id: 2,
@@ -13,7 +14,7 @@ const articles = [
       title: "Why Typography Still Matters",
       description: "Typography shapes how readers experience digital content.",
       content: "",
-      readingTime: "3 min read"
+      wordCount: 600
     },
     {
       id: 3,
@@ -21,7 +22,7 @@ const articles = [
       title: "Building Faster Reading Experiences",
       description: "Performance and responsive design create better user experiences.",
       content: "",
-      readingTime: "5 min read"
+      wordCount: 700
     },
     {
       id: 4,
@@ -29,7 +30,7 @@ const articles = [
       title: "Designing for Every Reader",
       description: "Accessibility should be considered from the very beginning of development.",
       content: "",
-      readingTime: "4 min read"
+      wordCount: 600
     },
     {
       id: 5,
@@ -37,7 +38,8 @@ const articles = [
       title: "The Rise of Mobile-First Publishing",
       description: "Most readers now consume content on mobile devices.",
       content: "",
-      readingTime: "5 min read"
+      wordCount: 900
+
     },
     {
       id: 6,
@@ -45,7 +47,7 @@ const articles = [
       title: "Creating Interfaces Readers Love",
       description: "Simple layouts and thoughtful interactions improve engagement.",
       content: "",
-      readingTime: "4 min read"
+      wordCount: 800
     }
   ]
 

@@ -42,7 +42,7 @@ defineProps({
     border-radius: $border-radius;
     box-shadow: $card-shadow;
     transition: transform .25s ease;
-    border: 1px solid $border; 
+    border: 1px solid $border;
 }
 
 &:hover {
