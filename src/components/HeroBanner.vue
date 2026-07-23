@@ -5,11 +5,11 @@
       <p class="tag">Digital publishing</p>
 
       <h1>
-        Stories designed for the curious minds. 
+        Stories designed for the curious minds.
       </h1>
 
       <p class="subtitle">
-        Exploring technology, software engineering, UX and digital publishing." 
+        Exploring technology, software engineering, UX and digital publishing.
       </p>
 
       <button>Read latest stories</button>
@@ -53,7 +53,7 @@ h1 {
   font-size: 1.2rem;
   line-height: 1.8;
   color: $text-light;
-  max-width: 550px;
+  max-width: 600px;
 }
 
 button {

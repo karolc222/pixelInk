@@ -1,12 +1,12 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-import HeroBanner from './components/HeroBanner.vue'
-import AppNavbar from './components/AppNavbar.vue'
-import ArticleCard from './components/ArticleCard.vue'
-import articles from './data/articles'
-import FeaturedArticle from './components/FeaturedArticle.vue'
-import SiteFooter from './components/SiteFooter.vue'
+import HeroBanner from '../components/HeroBanner.vue'
+import AppNavbar from '../components/AppNavbar.vue'
+import ArticleCard from '../components/ArticleCard.vue'
+import articles from '../data/articles'
+import FeaturedArticle from '../components/FeaturedArticle.vue'
+import SiteFooter from '../components/SiteFooter.vue'
 
 const search = ref('')
 
@@ -53,7 +53,7 @@ const filteredArticles = computed(() => {
 </template>
 
 <style scoped lang="scss">
-@use "./styles/variables" as *;
+@use "../styles/variables" as *;
 
 .articles {
   max-width: $content-width;
@@ -86,7 +86,7 @@ const filteredArticles = computed(() => {
   color: $text-muted;
 }
 
-.search input:focus { 
+.search input:focus {
   border-color: $primary;
 }
 
